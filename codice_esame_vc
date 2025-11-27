@@ -141,8 +141,6 @@ mkdir -p cache
 
 cd /config/workspace/class-variantcalling/analysis/variants
 
-git clone https://github.com/lescai-teaching/snpeff-cache.git
-
 ### to execute snpeff we need to contain the memory
 snpEff -Xmx4g ann -dataDir /config/workspace/datiesame/analysis/snpeff-cache -v hg38 results_ann.vcf >results_annotated.vcf
 
