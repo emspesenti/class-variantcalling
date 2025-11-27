@@ -151,6 +151,7 @@ cat results_ann.vcf | grep "#CHROM" | cut -f 10-
 ## use SNPsift to filter those with impact HIGH where the control is homozygous for reference and case is either 
 ## heterozygous or homozygous for the alternative allele
 
+
 SnpSift filter "ANN[0].IMPACT = 'HIGH' && isRef(GEN[1]) && (isVariant(GEN[0]) | isHom(GEN[0]))" results_ann.vcf >filtered_variants.vcf
 
 SnpSift extractFields \
