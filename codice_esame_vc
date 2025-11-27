@@ -142,7 +142,7 @@ mkdir -p cache
 cd /config/workspace/class-variantcalling/analysis/variants
 
 ### to execute snpeff we need to contain the memory
-snpEff -Xmx4g ann -dataDir /config/workspace/datiesame/analysis/snpeff-cache -v hg38 results_ann.vcf >results_annotated.vcf
+snpEff -Xmx4g ann -v hg38 results.vcf.gz >results_ann.vcf
 
 ### filter variants
 
